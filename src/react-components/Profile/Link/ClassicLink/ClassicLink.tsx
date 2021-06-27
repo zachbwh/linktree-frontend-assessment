@@ -5,9 +5,7 @@ import './ClassicLink.scss';
 
 const ClassicLink: React.FunctionComponent<{ link: ILink }> = props => {
 	return (
-	<div className="classic-link">
-        <a href={props.link.ClassicLink?.Url}>{props.link.ClassicLink?.Title}</a>
-	</div>
+	<a className="classic-link" href={props.link.ClassicLink?.Url} target="_blank" rel="noreferrer">{props.link.ClassicLink?.Title}</a>
 	);
 }
 

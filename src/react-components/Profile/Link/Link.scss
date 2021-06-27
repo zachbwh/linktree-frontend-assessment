@@ -1,0 +1,20 @@
+.link {
+    transition: background 100ms ease-in-out, color 100ms ease-in-out;
+    margin: 1em;
+    border-radius: 4px;
+    overflow: hidden;
+
+    background-color: #39E09B;
+    color: #263238;
+    &:hover {
+        color: #39E09B;
+        background-color: #263238;
+    }
+
+    a {
+        color:inherit;
+        background: inherit;
+        display: block;
+        text-decoration: none;
+    }
+}
