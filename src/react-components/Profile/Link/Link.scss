@@ -4,11 +4,11 @@
     border-radius: 4px;
     overflow: hidden;
 
-    background-color: #39E09B;
-    color: #263238;
+    background-color: var(--link-bg-color);
+    color: var(--link-color);
     &:hover {
-        color: #39E09B;
-        background-color: #263238;
+        background-color: var(--link-bg-color-inverted);
+        color: var(--link-color-inverted);
     }
 
     a {
