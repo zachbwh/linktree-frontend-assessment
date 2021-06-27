@@ -8,12 +8,12 @@ const Show: React.FunctionComponent<{ show: ISongKickEvent }> = props => {
     const eventDate = new Date(props.show.start),
         formattedDate = moment(eventDate).format("MMM D YYYY");
 
-    var rightSideLabel = (<div>
-
+    var rightSideLabel = (<div className="right-side-label">
+        <img className="right-arrow" src="/linktree-assets/icons/arrow.svg" alt="right arrow"/>
     </div>);
 
     if (props.show.status === "sold-out") {
-        rightSideLabel = (<div>Sold Out</div>);
+        rightSideLabel = <div className="right-side-label">Sold Out</div>;
     }
 
 	return (

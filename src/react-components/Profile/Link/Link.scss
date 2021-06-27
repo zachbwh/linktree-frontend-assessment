@@ -17,4 +17,11 @@
         display: block;
         text-decoration: none;
     }
+
+    .link-body {
+        padding: 1em;
+
+        background: var(--link-body-bg-color);
+        color: var(--link-body-color);
+    }
 }

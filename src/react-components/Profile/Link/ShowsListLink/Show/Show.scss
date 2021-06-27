@@ -1,0 +1,27 @@
+.show {
+    text-align: left;
+    display: flex;
+    border-bottom: 1px solid var(--);
+
+    .event-info {
+        flex-grow: 1;
+
+        .event-date {
+            font-size: 1.2em;
+        }
+
+        .event-venue {
+            font-size: 0.8em;
+        }
+
+    }
+
+    .right-side-label {
+        display: flex;
+        justify-content: center;
+
+        .right-arrow {
+            transform: rotate(-90deg);
+        }
+    }
+}

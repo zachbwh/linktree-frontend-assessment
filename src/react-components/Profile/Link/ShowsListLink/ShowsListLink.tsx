@@ -11,7 +11,13 @@ const ShowsListLink: React.FunctionComponent<{ link: ILink }> = props => {
 
 	return (
 	<div className="shows-list-link">
-        {showsList}
+        <div className="shows-list-header">{props.link.ShowsList?.Title}</div>
+        <div className="link-body">
+            {showsList}
+            <div className="songkick-logo">
+                <img src="/linktree-assets/icons/by-songkick-wordmark.svg" alt="SongKick Logo"/>
+            </div>
+        </div>
 	</div>
 	);
 }
