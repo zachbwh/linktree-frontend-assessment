@@ -4,7 +4,7 @@ interface IMusicPlayer {
 }
 
 interface IStreamingPlatformSongPlayer {
-	PlatformName: "spotify" | "apple-music" | "soundcloud" | "youtube-music" | "deezer" | "tidal" | "bandcamp",
+	Platform: "spotify" | "apple-music" | "soundcloud" | "youtube-music" | "deezer" | "tidal" | "bandcamp",
 	LogoUrl: string,
 	AudioPlayerSongLink: string,
 	StreamingPlatformSongLink: string

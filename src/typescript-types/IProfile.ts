@@ -5,7 +5,7 @@ interface IProfile {
 	Username: string,
 	ProfileImageUrl: string,
 	ProfileImageAltText: string,
-    Links: ILink,
+    Links: ILink[],
     Theme?: IProfileTheme
 }
 
