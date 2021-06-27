@@ -14,7 +14,7 @@ function App() {
       setProfile(profile);
 
 		}));
-	});
+	}, []);
   
   return (
     <div className="App">
