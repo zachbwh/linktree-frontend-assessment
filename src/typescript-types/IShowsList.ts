@@ -27,4 +27,5 @@ interface ISongKickCity {
 	}
 }
 
-export default IShowsList
+export default IShowsList;
+export type {ISongKickEvent};
