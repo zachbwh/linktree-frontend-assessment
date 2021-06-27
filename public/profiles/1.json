@@ -51,10 +51,5 @@
                 "Url": "https://zachhuxford.io"
             }
         }
-    ],
-    "Theme": {
-        "ThemeName": "linktree-default-light",
-        "LinkBackgroundColor": "#39E09B",
-        "LinkColor": "263238"
-    }
+    ]
 }
