@@ -1,9 +1,9 @@
 interface IMusicPlayer {
 	Title: string
-	StreamingPlatforms: IStreamingPlatformSongPlayer[]
+	StreamingPlatformSongs: IStreamingPlatformSong[]
 }
 
-interface IStreamingPlatformSongPlayer {
+interface IStreamingPlatformSong {
 	Platform: "spotify" | "apple-music" | "soundcloud" | "youtube-music" | "deezer" | "tidal" | "bandcamp",
 	LogoUrl: string,
 	AudioPlayerSongLink: string,
@@ -11,3 +11,4 @@ interface IStreamingPlatformSongPlayer {
 }
 
 export default IMusicPlayer
+export type {IStreamingPlatformSong};

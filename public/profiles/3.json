@@ -8,7 +8,7 @@
             "LinkType": "music-player",
             "MusicPlayer": {
                 "Title": "XS",
-                "StreamingPlatforms": [
+                "StreamingPlatformSongs": [
                     {
                         "Platform": "spotify",
                         "LogoUrl": "/linktree-assets/icons/spotify.svg",
