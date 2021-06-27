@@ -14,6 +14,12 @@
                         "LogoUrl": "/linktree-assets/icons/spotify.svg",
                         "AudioPlayerSongLink": "https://open.spotify.com/embed/track/3OK3uq0udXEDfEo7bvpNHW",
                         "StreamingPlatformSongLink": "https://open.spotify.com/track/3OK3uq0udXEDfEo7bvpNHW"
+                    },
+                    {
+                        "Platform": "apple-music",
+                        "LogoUrl": "/linktree-assets/icons/apple-music.svg",
+                        "AudioPlayerSongLink": "https://embed.music.apple.com/us/album/xs/1493469433?i=1493469443",
+                        "StreamingPlatformSongLink": "https://music.apple.com/us/album/xs/1493469433?i=1493469443"
                     }
                 ]
             }
