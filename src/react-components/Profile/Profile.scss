@@ -1,3 +1,18 @@
 .profile {
-    
+    max-width: 680px;
+	width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+
+    .profile-header {
+        padding: 1em 0 3em 0;
+
+        .profile-picture {
+            border-radius: 100%;
+        }
+
+        .profile-username {
+            padding-top: 1em;
+        }
+    }
 }
