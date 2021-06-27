@@ -1,0 +1,67 @@
+{
+    "Username": "yourname",
+    "ProfileImageUrl": "/linktree-assets/profile-picture.png",
+    "ProfileImageAltText": "Profile Picture for yourname",
+    "Links": [
+        {
+            "LinkId": "guid-1",
+            "LinkType": "music-player",
+            "MusicPlayer": {
+                "Title": "XS",
+                "StreamingPlatforms": [
+                    {
+                        "Platform": "spotify",
+                        "LogoUrl": "/linktree-assets/icons/spotify.svg",
+                        "AudioPlayerSongLink": "https://open.spotify.com/embed/track/3OK3uq0udXEDfEo7bvpNHW",
+                        "StreamingPlatformSongLink": "https://open.spotify.com/track/3OK3uq0udXEDfEo7bvpNHW"
+                    }
+                ]
+            }
+        },
+        {
+            "LinkId": "guid-2",
+            "LinkType": "classic",
+            "ClassicLink": {
+                "Title": "48H",
+                "Url": "https://zachhuxford.io"
+            }
+        },
+        {
+            "LinkId": "guid-3",
+            "LinkType": "classic",
+            "ClassicLink": {
+                "Title": "48H",
+                "Url": "https://zachhuxford.io"
+            }
+        },
+        {
+            "LinkId": "guid-4",
+            "LinkType": "classic",
+            "ClassicLink": {
+                "Title": "48H",
+                "Url": "https://zachhuxford.io"
+            }
+        },
+        {
+            "LinkId": "guid-5",
+            "LinkType": "classic",
+            "ClassicLink": {
+                "Title": "48H",
+                "Url": "https://zachhuxford.io"
+            }
+        },
+        {
+            "LinkId": "guid-6",
+            "LinkType": "classic",
+            "ClassicLink": {
+                "Title": "48H",
+                "Url": "https://zachhuxford.io"
+            }
+        }
+    ],
+    "Theme": {
+        "ThemeName": "linktree-default-light",
+        "LinkBackgroundColor": "#39E09B",
+        "LinkColor": "263238"
+    }
+}
