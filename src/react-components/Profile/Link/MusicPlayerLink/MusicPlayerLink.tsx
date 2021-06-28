@@ -11,7 +11,10 @@ const MusicPlayerLink: React.FunctionComponent<{ link: ILink }> = props => {
 
 	return (
 	<div className="music-player-link">
-        {streamingPlatforms}
+        <div className="music-player-header">{props.link.MusicPlayer?.Title}</div>
+        <div className="link-body">
+            {streamingPlatforms}
+        </div>
 	</div>
 	);
 }

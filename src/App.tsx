@@ -7,7 +7,7 @@ function App() {
   const [profile, setProfile] = useState<IProfile>();
 
   useEffect(() => {
-		fetch('/profiles/2.json')
+		fetch('/profiles/3.json')
 		.then(response => response.json())
 		.then(((profile: IProfile) => {
 
