@@ -1,7 +1,9 @@
 .show {
     text-align: left;
     display: flex;
-    border-bottom: 1px solid var(--);
+    margin-left: 1em;
+    padding: 1em 1em 1em 0;
+    cursor: pointer;
 
     .event-info {
         flex-grow: 1;
@@ -19,8 +21,11 @@
     .right-side-label {
         display: flex;
         justify-content: center;
+        flex-direction: column;
+        font-size: 0.8em;
 
         .right-arrow {
+            opacity: 0.6;
             transform: rotate(-90deg);
         }
     }

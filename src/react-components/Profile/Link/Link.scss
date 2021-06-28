@@ -9,6 +9,20 @@
     &:hover {
         background-color: var(--link-bg-color-inverted);
         color: var(--link-color-inverted);
+
+        .link-body {
+            background: var(--link-body-bg-color-inverted);
+            color: var(--link-body-color-inverted);
+
+            .link-body-section {
+                border-bottom: 1px solid var(--link-body-border-color-inverted);
+            }
+        }
+
+        img {
+            transition: filter 100ms ease-in-out;
+            filter: invert(1)
+        }
     }
 
     a {
@@ -19,9 +33,13 @@
     }
 
     .link-body {
-        padding: 1em;
-
+        transition: background 100ms ease-in-out, color 100ms ease-in-out;
         background: var(--link-body-bg-color);
         color: var(--link-body-color);
+
+        .link-body-section {
+            transition: border 100ms ease-in-out;
+            border-bottom: 1px solid var(--link-body-border-color);
+        }
     }
 }

@@ -6,7 +6,7 @@ import './ShowsListLink.scss';
 
 const ShowsListLink: React.FunctionComponent<{ link: ILink }> = props => {
     var showsList = props.link.ShowsList?.Events.map(show => {
-        return <Show show={show}></Show>
+        return <Show show={show} key={show.id}></Show>
     });
 
 	return (

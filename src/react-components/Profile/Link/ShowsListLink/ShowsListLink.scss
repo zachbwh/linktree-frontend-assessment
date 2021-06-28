@@ -2,4 +2,16 @@
     .shows-list-header {
         padding: 1em;
     }
+
+    .songkick-logo {
+        opacity: 0.6;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        img {
+            height: 1.4em;
+        }
+    }
 }
