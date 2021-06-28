@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { IStreamingPlatformSong } from 'typescript-types/IMusicPlayer';
 
 import './StreamingPlatformWidget.scss';
 
 const StreamingPlatformWidget: React.FunctionComponent<{ streamingPlatformSong: IStreamingPlatformSong }> = props => {
+    const [playerVisible, setPlayerVisible] = useState(false);
+
     var streamingPlatformWidget;
 
     switch(props.streamingPlatformSong.Platform) {
@@ -16,16 +18,26 @@ const StreamingPlatformWidget: React.FunctionComponent<{ streamingPlatformSong: 
         // @todo add more rendering templates for other music streaming services embed codes
     }
 
+    function togglePlayerVisible() {
+        setPlayerVisible(!playerVisible);
+    }
+
+    function openLinkInPlatform() {
+        window.open(props.streamingPlatformSong.StreamingPlatformSongLink);
+    }
+
 	return (
 	<div className="streaming-platform-widget">
         <div className="streaming-platform-header">
-            <div className="platform-icon">
+            <div className="platform-icon" onClick={openLinkInPlatform}>
                 <img src={props.streamingPlatformSong.LogoUrl} alt={props.streamingPlatformSong.PlatformDisplayName}></img>
             </div>
-            <div className="platform-display-name">{props.streamingPlatformSong.PlatformDisplayName}</div>
-            <img className="arrow-icon" src="/linktree-assets/icons/arrow.svg" alt="arrow"/>
+            <div className="platform-details" onClick={togglePlayerVisible}>
+                <div className="platform-display-name">{props.streamingPlatformSong.PlatformDisplayName}</div>
+                <img className="arrow-icon" src="/linktree-assets/icons/arrow.svg" alt="arrow" style={{transform: playerVisible ? "rotate(0deg)" : "rotate(-90deg)"}}/>
+            </div>
         </div>
-        <div className="iframe-parent">
+        <div className="iframe-parent" style={{display: playerVisible ? "" : "none"}}>
             {streamingPlatformWidget}
         </div>
 	</div>

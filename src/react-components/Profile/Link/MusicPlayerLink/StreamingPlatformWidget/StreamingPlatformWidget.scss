@@ -10,6 +10,17 @@
             opacity: 0.6;
         }
 
+        .arrow-icon {
+            transition: transform 200ms ease-in-out;
+        }
+
+        .platform-details {
+            display: flex;
+            flex-grow: 1;
+            transition: border 100ms ease-in-out;
+            border-bottom: 1px solid var(--link-body-border-color);
+        }
+
         .platform-display-name {
             padding: 1em 0;
             text-align: left;
@@ -19,5 +30,19 @@
 
     .iframe-parent {
         background: var(--link-body-bg-color);
+    }
+}
+
+.streaming-platform-widget:last-child {
+    .platform-details {
+        border-width: 0px;
+    }
+}
+
+.link:hover {
+    .streaming-platform-widget {
+        .platform-details {
+            border-bottom: 1px solid var(--link-body-border-color-inverted);
+        }
     }
 }
