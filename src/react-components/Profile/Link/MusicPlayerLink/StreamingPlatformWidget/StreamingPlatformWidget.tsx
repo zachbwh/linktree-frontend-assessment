@@ -18,7 +18,16 @@ const StreamingPlatformWidget: React.FunctionComponent<{ streamingPlatformSong: 
 
 	return (
 	<div className="streaming-platform-widget">
-        {streamingPlatformWidget}
+        <div className="streaming-platform-header">
+            <div className="platform-icon">
+                <img src={props.streamingPlatformSong.LogoUrl} alt={props.streamingPlatformSong.PlatformDisplayName}></img>
+            </div>
+            <div className="platform-display-name">{props.streamingPlatformSong.PlatformDisplayName}</div>
+            <img className="arrow-icon" src="/linktree-assets/icons/arrow.svg" alt="arrow"/>
+        </div>
+        <div className="iframe-parent">
+            {streamingPlatformWidget}
+        </div>
 	</div>
 	);
 }

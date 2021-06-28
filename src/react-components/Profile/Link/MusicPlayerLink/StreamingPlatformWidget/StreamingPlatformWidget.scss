@@ -1,3 +1,23 @@
 .streaming-platform-widget {
-    background: var(--link-body-bg-color);
+
+    .streaming-platform-header {
+        display: flex;
+        cursor: pointer;
+
+        .platform-icon,
+        .arrow-icon {
+            padding: 1em;
+            opacity: 0.6;
+        }
+
+        .platform-display-name {
+            padding: 1em 0;
+            text-align: left;
+            flex-grow: 1;
+        }
+    }
+
+    .iframe-parent {
+        background: var(--link-body-bg-color);
+    }
 }
